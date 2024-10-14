@@ -73,4 +73,6 @@ jobs:
         with:
           app-name: 'azurechatmahdi-webapp-qxvns4dohoffs'
           slot-name: 'Production'
-          package: .
+          package: ${{ github.workspace }}/release.zip
+          enable-oci-compatibility: true
+
